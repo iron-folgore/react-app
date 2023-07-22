@@ -6,11 +6,10 @@ export default function TopPage() {
 	const { path } = useOutletContext();
 	return (
 		<>
-			{console.log("path", path == "")}
 			<PageContainer>
 				<Flex>
 					<MenuIcon />
-					<Heading>Welcome to {path == "" ? "Top Page" : path}!</Heading>
+					<Heading>Welcome to {path === "" ? "Top Page" : path}!</Heading>
 				</Flex>
 			</PageContainer>
 		</>
